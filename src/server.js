@@ -41,7 +41,8 @@ import { products } from "./backend/db/products.js";
 import { users } from "./backend/db/users.js";
 import { v4 as uuid } from "uuid";
 import { paymentHandler } from "./backend/controllers/PaymentController.js";
-
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
 export function makeServer({ environment = "development" } = {}) {
   return new Server({
     serializers: {
@@ -132,4 +133,5 @@ export function makeServer({ environment = "development" } = {}) {
       this.post("/user/orders", addItemToOrdersHandler.bind(this));
     },
   });
-}
+};
+

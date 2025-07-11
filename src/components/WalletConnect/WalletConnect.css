@@ -1,0 +1,45 @@
+.wallet-connect-container {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  
+  .wallet-connect-btn {
+    background-color: rgb(24, 24, 24);
+    color: rgb(165, 165, 165);
+    border: 1px solid rgb(42, 42, 42);
+    border-radius: 18px;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .wallet-connect-btn:hover {
+    background-color: rgb(42, 42, 42);
+    color: white;
+    border: 1px solid white;
+  }
+  
+  @media (max-width: 768px) {
+    .wallet-connect-container {
+      justify-content: center;
+      width: 100%;
+      margin: 1rem 0;
+    }
+  
+    .wallet-connect-btn {
+      width: 90%;
+      font-size: 1rem;
+    }
+  }
+  .simulate-payment-btn {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    margin-left: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  

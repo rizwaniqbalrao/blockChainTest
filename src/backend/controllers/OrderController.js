@@ -39,7 +39,7 @@ export const addItemToOrdersHandler = function (schema, request) {
         }
       );
     }
-    const userOrders = schema.findBy({ _id: userId }).orders;
+    const userOrders = schema.users.findBy({ _id: userId }).orders;
     console.log("userOrdersuserOrders",userOrders)
     const order = JSON.parse(request.requestBody);
     console.log("orderorderorder",order)
